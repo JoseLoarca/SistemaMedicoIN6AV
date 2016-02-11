@@ -13,7 +13,7 @@ import javax.servlet.http.HttpSession;
 
 import org.sistemamedico.db.Conexion;
 
-@WebServlet("/AutenticarUsuario")
+@WebServlet("/AutenticarUsuario.do")
 public class AutenticarUsuario extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -26,7 +26,7 @@ public class AutenticarUsuario extends HttpServlet {
 			sesion.setAttribute("usuario", usuarios.get(0));
 		}else{
 			despachador=req.getRequestDispatcher("index.jsp");
-			req.setAttribute("error", "Verifique sus credenciales");
+			req.setAttribute("error", "Usuario/Contraseña inválidos.");
 		}
 		despachador.forward(req, resp);
 	}

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.sistemamedico.db.Conexion;
 
-@WebServlet("/CerrarSesion")
+@WebServlet("/CerrarSesion.do")
 public class CerrarSesion extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

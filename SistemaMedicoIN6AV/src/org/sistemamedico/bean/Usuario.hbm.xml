@@ -12,7 +12,7 @@
 		<property name="nombre" type="java.lang.String">
 			<column name="nombre"/>
 		</property>
-		<property name="telefono" type="java.lang.String">
+		<property name="telefono" type="java.lang.Integer">
 			<column name="telefono"/>
 		</property>
 		<property name="correo" type="java.lang.String">
