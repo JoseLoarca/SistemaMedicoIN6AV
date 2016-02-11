@@ -32,4 +32,20 @@ public class Conexion {
             throw new HibernateException(ex);
         }
     }
+	public List<Object> listar(String consulta){
+		Session miSesion=sesion.getCurrentSession();
+		List<Object> lista=null;
+		miSesion.beginTransaction();
+		lista=miSesion.createQuery(consulta).list();
+		miSesion.getTransaction().commit();
+		return lista;
+	}
+	public List<Object> autenticarUsuario(String nick,String contraseña){
+		Session miSesion=sesion.getCurrentSession();
+		List<Object> lista=null;
+		miSesion.beginTransaction();
+		lista=miSesion.createQuery("From Usuario u where u.nick='"+nick+"' and contraseña='"+contraseña+"'").list();
+		miSesion.getTransaction().commit();
+		return lista;
+	}
 }
