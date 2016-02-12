@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Log in</title>
+    <title>CME - Log In</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -56,6 +56,11 @@
             </div><!-- /.col -->
           </div>
         </form>
+        
+           <div class="social-auth-links text-center">
+          <p>- MÁS -</p>
+          <a href="/SistemaMedicoIN6AV/sistemamedico/registrar.jsp" class="text-center">Crear cuenta.</a>
+        </div><!-- /.social-auth-links -->  
 
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->
