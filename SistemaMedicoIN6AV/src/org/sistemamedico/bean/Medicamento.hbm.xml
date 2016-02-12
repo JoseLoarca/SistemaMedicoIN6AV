@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.sistemamedico.bean.Medicamento" table="medicamento">
+		<id name="idMedicamento" type="java.lang.Integer">
+			<column name="idMedicamento" />
+            <generator class="assigned" />
+		</id>
+		<property name="nombre" type="java.lang.String">
+            <column name="nombre" />
+        </property>
+		<property name="precio" type="java.lang.Double">
+		    <column name="precio" />
+		</property>
+		<property name="fechaVencimiento" type="java.lang.Date">
+		    <column name="fechaVencimiento" />
+		</property>
+		<many-to-one name="idProveedor" class="org.sistemamedico.Proveedor" lazy="false">
+			<column  name="idProveedor"/>
+		</many-to-one>
+	</class>
+</hibernate-mapping>
