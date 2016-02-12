@@ -42,13 +42,11 @@
     <body class="error-page">
         <div class="container animated fadeInDown">
             <h1 class="error-number">401</h1>
-            <h1 class="text-center mb25">Unauthorized ...</h1>
-            <p class="text-center s24">You need to login first to see this page.</p>
+            <h1 class="text-center mb25">No autorizado...</h1>
+            <p class="text-center s24">Acceso denegado debido a credenciales no válidas.</p>
             <div class="text-center mt25">
                 <div class="btn-group">
-                    <a href="javascript: history.go(-1)" class="btn btn-default btn-lg"><i class="en-arrow-left8"></i>  Go back</a>
-                    <a href="login.html" class="btn btn-default btn-lg"><i class="ec-locked"></i> Login</a>
-                    <a href="#" class="btn btn-default btn-lg"><i class="en-mail"></i> Contact admin</a>
+                    <a href="../index.jsp" class="btn btn-default btn-lg"><i class="ec-locked"></i>Iniciar Sesión</a>
                 </div>
             </div>
         </div>

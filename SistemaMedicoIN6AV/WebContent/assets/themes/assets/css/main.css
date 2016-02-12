@@ -793,12 +793,12 @@ body.login-page #login .login-wrapper #user-info h4.headline {
 }
 body.error-page {
   margin-top: 5%;
-  background-color: #f2f1ef;
+  background-color: #d2d6de;  
 }
 body.error-page h1.error-number {
   text-align: center;
   font-size: 20em;
-  font-family: 'Cantarell';
+  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
 }
 body.mce-fullscreen #header {
   display: none;

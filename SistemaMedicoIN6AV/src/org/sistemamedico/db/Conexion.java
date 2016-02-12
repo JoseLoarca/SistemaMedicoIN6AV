@@ -48,4 +48,24 @@ public class Conexion {
 		miSesion.getTransaction().commit();
 		return lista;
 	}
+	public void agregar (Object agregar){
+		Session session=sesion.getCurrentSession();
+		session.beginTransaction();
+		session.save(agregar);
+		session.getTransaction().commit();	
+	}
+	public Object buscar(Class<?> clase,int id){
+		Session session=sesion.getCurrentSession();
+		session.beginTransaction();
+		Object obj=session.get(clase, id);
+		session.getTransaction().commit();
+		return obj;
+	}
+	public Object buscar(Class<?> clase,String id){
+		Session session=sesion.getCurrentSession();
+		session.beginTransaction();
+		Object obj=session.get(clase, id);
+		session.getTransaction().commit();
+		return obj;
+	}
 }

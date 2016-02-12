@@ -35,29 +35,29 @@
 
       <div class="register-box-body">
         <p class="login-box-msg">Ingrese los datos requeridos.</p>
-        <form action="" method="post">
+        <form action="/SistemaMedicoIN6AV/AgregarUsuario.do" method="post">
           <div class="form-group has-feedback">
-            <input type="text" class="form-control" required placeholder="Nombre">
+            <input type="text" class="form-control" required placeholder="Nombre" name="txtNombre">
             <span class="glyphicon glyphicon-user form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
-            <input type="number" class="form-control" required placeholder="Teléfono">
+            <input type="number" class="form-control" required placeholder="Teléfono" name="txtTelefono">
             <span class="glyphicon glyphicon-phone form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
-            <input type="email" class="form-control" required placeholder="Correo Electrónico">
+            <input type="email" class="form-control" required placeholder="Correo Electrónico" name="txtCorreo">
             <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
-            <input type="text" class="form-control" required placeholder="Ciudad">
+            <input type="text" class="form-control" required placeholder="Ciudad" name="txtDireccion">
             <span class="glyphicon glyphicon-globe form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
-            <input type="text" class="form-control" required placeholder="Nombre de Usuario">
+            <input type="text" class="form-control" required placeholder="Nombre de Usuario" name="txtNick">
             <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
-            <input type="password" class="form-control" required placeholder="Contraseña">
+            <input type="password" class="form-control" required placeholder="Contraseña" name="txtContraseña">
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
           </div>
 
@@ -65,7 +65,7 @@
             <div class="col-xs-8">
               <div class="checkbox icheck">
                 <label>
-                  <input type="checkbox"> He leído y acepto los <a href="#">términos y condiciones</a> de uso.
+                  <input type="checkbox" required> He leído y acepto los <a href="#">términos y condiciones</a> de uso.
                 </label>
               </div>
             </div><!-- /.col -->
