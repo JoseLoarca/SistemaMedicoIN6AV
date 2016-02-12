@@ -7,7 +7,7 @@
 		//response.sendRedirect("/SistemaMedicoIN6AV/sistemamedico/dashboard.jsp");
 	}else{
 		%>	
-		<jsp:forward page="/index.jsp">
+		<jsp:forward page="/sistemamedico/error.jsp">
 			<jsp:param name="error" value="Para acceder al sistema, inicie sesión." />
 		</jsp:forward>		
 		<%
