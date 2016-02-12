@@ -8,6 +8,7 @@
     <title>CME - Crear cuenta</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" href="https://maxcdn.icons8.com/Color/PNG/24/Healthcare/caduceus-24.png">
     <!-- Bootstrap 3.3.5 -->
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome -->
