@@ -27,7 +27,7 @@
   <body class="hold-transition login-page">
     <div class="login-box">
       <div class="login-logo">
-        <a><b>Inicie Sesión</b></a>
+        <a>Bienvenido al <br><b>Centro Médico Esperanza</b></a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg">Ingrese sus datos para acceder al sistema.</p>

@@ -20,7 +20,7 @@
 </head>
 <body>
 
-	Bienvenido ${usuario.getNombre()} al sistema.
+	Bienvenido ${usuario.getNombre()}.
 	<a href="CerrarSesion.do">Cerrar Sesión</a>
 	
 </body>
