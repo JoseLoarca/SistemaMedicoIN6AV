@@ -77,7 +77,7 @@
 
         <div class="social-auth-links text-center">
           <p>- MÁS -</p>
-			<a href="index.jsp" class="text-center">Ya tengo cuenta.</a>
+			<a href="../index.jsp" class="text-center">Ya tengo cuenta.</a>
         </div>
 
       </div><!-- /.form-box -->
