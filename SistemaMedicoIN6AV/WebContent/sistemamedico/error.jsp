@@ -19,17 +19,17 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700' rel='stylesheet' type='text/css'>
         <!-- Css files -->
         <!-- Icons -->
-        <link href="assets/css/icons.css" rel="stylesheet" />
+        <link href="../assets/themes/assets/css/icons.css" rel="stylesheet" />
         <!-- Bootstrap stylesheets (included template modifications) -->
-        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <link href="../assets/themes/assets/css/bootstrap.css" rel="stylesheet" />
         <!-- jQueryUI -->
-        <link href="assets/css/appstart-theme/jquery.ui.all.css" rel="stylesheet" />
+        <link href="../assets/themes/assets/css/appstart-theme/jquery.ui.all.css" rel="stylesheet" />
         <!-- Plugins stylesheets (all plugin custom css) -->
-        <link href="assets/css/plugins.css" rel="stylesheet" />
+        <link href="../assets/themes/assets/css/plugins.css" rel="stylesheet" />
         <!-- Main stylesheets (template main css file) -->
-        <link href="assets/css/main.css" rel="stylesheet" />
+        <link href="../assets/themes/assets/css/main.css" rel="stylesheet" />
         <!-- Custom stylesheets ( Put your own changes here ) -->
-        <link href="assets/css/custom.css" rel="stylesheet" />
+        <link href="../assets/themes/assets/css/custom.css" rel="stylesheet" />
         <!-- Fav and touch icons -->
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/ico/apple-touch-icon-144-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/ico/apple-touch-icon-114-precomposed.png">
@@ -68,6 +68,6 @@
   <script type="text/javascript" src="assets/js/libs/respond.min.js"></script>
 <![endif]-->
         <!-- Bootstrap plugins -->
-        <script src="assets/js/bootstrap/bootstrap.js"></script>
+        <script src="../assets/themes/assets/js/bootstrap/bootstrap.js"></script>
     </body>
 </html>
