@@ -13,18 +13,18 @@
 	}
 %>
 <html>
-	<head>
-	<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CME - Noticias</title>
+    <title>CME - Citas</title>
     
     <link rel="shortcut icon" href="https://maxcdn.icons8.com/Color/PNG/24/Healthcare/caduceus-24.png">
     
-     <link href="../assets/startbootstrap/css/custom.css" rel="stylesheet" />
+    <link href="../assets/startbootstrap/css/custom.css" rel="stylesheet" />
 
     <!-- Bootstrap Core CSS -->
     <link href="../assets/startbootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -52,7 +52,7 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
+                    <span class="sr-only"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -63,7 +63,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a >Citas</a>
+                        <a href="/SistemaMedicoIN6AV/sistemamedico/citas.jsp">Citas</a>
                     </li>
                     <li>
                         <a >Medicamentos</a>
@@ -93,64 +93,37 @@
     <!-- Page Content -->
     <div class="container">
 
+        <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Noticias</h1>
+                <h1 class="page-header">Citas
+                    <small>Programa una cita</small>
+                </h1>
             </div>
         </div>
- 
         <!-- /.row -->
-
-        <!-- Blog Post Row -->
+        <!-- Content Row -->
         <div class="row">
-            <div class="col-md-1 text-center">
-                <p><i class="fa fa-exclamation-triangle fa-4x"></i>
-                </p>
-                <p>13 febrero, 2016</p>
-            </div>
-            <div class="col-md-5">
-                <a href="blog-post.html">
-                    <img class="img-responsive img-hover" src="http://ichef.bbci.co.uk/news/ws/660/amz/worldservice/live/assets/images/2015/06/11/150611122654_zika_624x351_thinkstock.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-6">
-                <h3>
-                    <a href="blog-post.html">Confirmados 105 casos de zika en Guatemala</a>
-                </h3>
-                <p>por <a>Admin</a>
-                </p>
-                <p>Al menos 105 contagiados del virus zika, que podría causar malformaciones cerebrales a bebés, fueron confirmados en Guatemala, indicó la epidemióloga del Ministerio de Salud, Judith García, en declaraciones a la prensa. </p>
-                <a class="btn btn-primary" href="blog-post.html">Ver artículo <i class="fa fa-caret-right"></i></a>
+            <div class="col-lg-12">
+                <h4>Ingrese los datos requeridos para programar una cita.</h4>
             </div>
         </div>
         <!-- /.row -->
-
-        <hr>
-
-
-        <!-- Blog Post Row -->
-        <div class="row">
-            <div class="col-md-1 text-center">
-                <p><i class="fa fa-4x fa-birthday-cake"></i>
-                </p>
-                <p>11 febrero, 2016</p>
-            </div>
-            <div class="col-md-5">
-                <a href="blog-post.html">
-                    <img class="img-responsive img-hover" src="../assets/startbootstrap/img/CME.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-6">
-                <h3><a href="blog-post.html">Lanzamiento sitio oficial <b>CME</b></a>
-                </h3>
-                <p>por <a>Admin</a>
-                </p>
-                <p>Estamos muy emocionados de informarles que con motivo del primer aniversario del <b>CME</b>, estaremos estrenando el nuevo sitio web, donde usted podrá programar citas, comprar medicamentos, leer noticias relevantes, etc.</p>
-                <a class="btn btn-primary" href="blog-post.html">Ver artículo <i class="fa fa-caret-right"></i></a>
-            </div>
-        </div>
-        <!-- /.row -->
-
+        <form action="" method="post" onSubmit="alert('Su cita ha sido programa, lo estaremos esperando!');">
+               <h5>Fecha:</h5>  
+               <input type="date" name="txtFecha" required min="2016-02-13" value="2016-02-13" >
+               <br>
+               <h5>Hora:</h5>
+               <input type="time" name="txtHora" required min="07:00:00" max="23:00:00" required value="12:00:00"> 
+               <br>
+               <h5>Enfermedad:</h5>
+               <input type="text" name="txtEnfermedad" placeholder="Opcional.">
+               <br>
+               <h5>Síntomas:</h5>
+               <textarea rows="10" cols="50" name="txtSintoma" placeholder="Opcional."></textarea> 
+               <br>
+               <input type="submit" class="btn btn-default" value="Programar" >
+        </form>
 
         <hr>
 
@@ -171,6 +144,13 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../assets/startbootstrap/js/bootstrap.min.js"></script>
+    
+    <script>
+    $('txtFecha').datepicker({
+    minDate : 0
+	});
+    </script>
+    
 
 </body>
 

@@ -8,6 +8,7 @@ public class Cita {
 	private String hora;
 	private Usuario idUsuario;
 	private Enfermedad idEnfermedad;
+	private String sintoma;
 	public Integer getIdCita() {
 		return idCita;
 	}
@@ -38,13 +39,20 @@ public class Cita {
 	public void setIdEnfermedad(Enfermedad idEnfermedad) {
 		this.idEnfermedad = idEnfermedad;
 	}
-	public Cita(Integer idCita, Date fecha, String hora, Usuario idUsuario, Enfermedad idEnfermedad) {
+	public String getSintoma(){
+		return sintoma;
+	}
+	public void setSintoma(String sintoma){
+		this.sintoma=sintoma;
+	}
+	public Cita(Integer idCita, Date fecha, String hora, Usuario idUsuario, Enfermedad idEnfermedad, String sintoma) {
 		super();
 		this.idCita = idCita;
 		this.fecha = fecha;
 		this.hora = hora;
 		this.idUsuario = idUsuario;
 		this.idEnfermedad = idEnfermedad;
+		this.sintoma = sintoma;
 	}
 	public Cita() {
 		super();

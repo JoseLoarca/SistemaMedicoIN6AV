@@ -19,5 +19,8 @@
 		<many-to-one name="idEnfermedad" class="org.sistemamedico.bean.Enfermedad" lazy="false">
 			<column  name="idEnfermedad"/>
 		</many-to-one>
+		<property name="sintoma" type="java.lang.String">
+			<column name="sintoma" />
+		</property>
 	</class>
 </hibernate-mapping>

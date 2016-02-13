@@ -22,6 +22,8 @@
 
     <title>CME - Bienvenido</title>
     
+    <link rel="shortcut icon" href="https://maxcdn.icons8.com/Color/PNG/24/Healthcare/caduceus-24.png">
+    
     <link href="assets/startbootstrap/css/custom.css" rel="stylesheet" />
 
     <!-- Bootstrap Core CSS -->
@@ -48,7 +50,7 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
+                    <span class="sr-only"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -59,7 +61,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a >Citas</a>
+                        <a href="/SistemaMedicoIN6AV/sistemamedico/citas.jsp">Citas</a>
                     </li>
                     <li>
                         <a >Medicamentos</a>
@@ -98,21 +100,21 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                <div class="fill" style="background-image:url('http://www.dyvservicios.com/img_sub/fimportante.jpg');"></div>
                 <div class="carousel-caption">
-                    <h2>Caption 1</h2>
+                    <h4>Los mejores médicos del país a tu servicio.</h4>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="fill" style="background-image:url('http://medicina.udd.cl/clinica-santiago/files/2013/01/IMG_5191.jpg');"></div>
                 <div class="carousel-caption">
-                    <h2>Caption 2</h2>
+                    <h4>Las instalaciones más modernas de la región.</h4>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="fill" style="background-image:url('http://www.ufjf.br/secom/files/2009/03/dsc_2612.jpg');"></div>
                 <div class="carousel-caption">
-                    <h2>Caption 3</h2>
+                    <h4>La tecnología más avanzada, al alcance de tus manos.</h4>
                 </div>
             </div>
         </div>
@@ -143,7 +145,7 @@
                     </div>
                     <div class="panel-body">
                         <p>En el Centro Médico Esperanza sabemos lo importante que es tu salud, por eso te ofrecemos atención personalizada 24/7.</p>
-                        <a href="#" class="btn btn-default">Haz una cita</a>
+                        <a href="/SistemaMedicoIN6AV/sistemamedico/citas.jsp" class="btn btn-default">Haz una cita</a>
                     </div>
                 </div>
             </div>
@@ -165,7 +167,7 @@
                     </div>
                     <div class="panel-body">
                         <p>En nuestra sección de noticias podrás estar al tanto de los últimos acontecimientos en el mundo de la medicina.</p>
-                        <a href="#" class="btn btn-default">Ver más</a>
+                        <a href="/SistemaMedicoIN6AV/sistemamedico/noticias.jsp" class="btn btn-default">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -197,10 +199,10 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="assets/startbootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Script to Activate the Carousel -->
+    <!-- Script para activar el carousel -->
     <script>
     $('.carousel').carousel({
-        interval: 5000 //changes the speed
+        interval: 5000 //cambia velocidad del carousel
     })
     </script>
 
