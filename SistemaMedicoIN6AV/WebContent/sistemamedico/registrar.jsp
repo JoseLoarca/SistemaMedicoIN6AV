@@ -41,7 +41,7 @@
             <span class="glyphicon glyphicon-user form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
-            <input type="number" class="form-control" required placeholder="Teléfono" name="txtTelefono">
+            <input type="number" class="form-control" required placeholder="Teléfono" name="txtTelefono" maxlength="8">
             <span class="glyphicon glyphicon-phone form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
