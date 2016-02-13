@@ -109,7 +109,7 @@
             </div>
         </div>
         <!-- /.row -->
-        <form action="" method="post" onSubmit="alert('Su cita ha sido programa, lo estaremos esperando!');">
+        <form action="" method="post" onSubmit="alert('Su cita ha sido programada, lo estaremos esperando!');">
                <h5>Fecha:</h5>  
                <input type="date" name="txtFecha" required min="2016-02-13" value="2016-02-13" >
                <br>
