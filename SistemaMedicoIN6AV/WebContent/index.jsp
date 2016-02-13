@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="assets/dist/css/custom.css" rel="stylesheet" />
     <!-- Theme style -->
     <link rel="stylesheet" href="assets/dist/css/AdminLTE.min.css">
     <!-- iCheck -->
@@ -28,7 +29,7 @@
   <body class="hold-transition login-page">
     <div class="login-box">
       <div class="login-logo">
-        <a>Bienvenido al <br><b>Centro Médico Esperanza</b></a>
+        <a><b>Centro Médico Esperanza</b></a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg">Ingrese sus datos para acceder al sistema.</p>
