@@ -1,30 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<%Object usr=request.getSession().getAttribute("usuario");
-	if(usr!=null){
-		//response.sendRedirect("/SistemaMedicoIN6AV/sistemamedico/dashboard.jsp");
-	}else{
-		%>	
-		<jsp:forward page="/sistemamedico/error.jsp">
-			<jsp:param name="error" value="Para acceder al sistema, inicie sesión." />
-		</jsp:forward>		
-		<%
-	}
-%>
 <html>
 	<head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CME - Contacto</title>
+    <title>CME - Noticias</title>
     
     <link rel="shortcut icon" href="https://maxcdn.icons8.com/Color/PNG/24/Healthcare/caduceus-24.png">
     
-    <link href="../assets/startbootstrap/css/custom.css" rel="stylesheet" />
+     <link href="../assets/startbootstrap/css/custom.css" rel="stylesheet" />
 
     <!-- Bootstrap Core CSS -->
     <link href="../assets/startbootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -93,42 +82,64 @@
     <!-- Page Content -->
     <div class="container">
 
-        <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Contáctenos</h1>
+                <h1 class="page-header">Noticias</h1>
             </div>
         </div>
+ 
         <!-- /.row -->
 
-        <!-- Content Row -->
+        <!-- Blog Post Row -->
         <div class="row">
-            <!-- Map Column -->
-            <div class="col-md-8">
-                <!-- Embedded Google Map -->
-                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.537000482666!2d-90.5381717851312!3d14.62543138978665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a190308858f1%3A0x6795822b2b81d4ac!2sCentro+Educativo+Tecnico+Laboral+KINAL!5e0!3m2!1ses!2sgt!4v1455333817961" width="600" height="450" frameborder="0" style="border:0" allowfullscreen"></iframe>
+            <div class="col-md-1 text-center">
+                <p><i class="fa fa-camera fa-4x"></i>
+                </p>
+                <p>13 febrero, 2016</p>
             </div>
-            <!-- Contact Details Column -->
-            <div class="col-md-4">
-                <h3>Detalles</h3>
-                <p>
-                    6 av. 13-54, Zona 7 Colonia Landívar<br>Ciudad de Guatemala, Guatemala<br>
+            <div class="col-md-5">
+                <a href="blog-post.html">
+                    <img class="img-responsive img-hover" src="http://placehold.it/600x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <h3>
+                    <a href="blog-post.html">Blog Post Title</a>
+                </h3>
+                <p>by <a href="#">Start Bootstrap</a>
                 </p>
-                <p><i class="fa fa-phone-square"></i> 
-                    <abbr title="Teléfono">T</abbr>: 01-800-ESPERANZA</p>
-                <p><i class="fa fa-envelope"></i> 
-                    <abbr title="Correo Electrónico">C</abbr>: <a href="mailto:name@example.com">centromedico@esperanza.com</a>
-                </p>
-                <p><i class="fa fa-hourglass"></i> 
-                    <abbr title="Horario">H</abbr>: Lunes - Domingo: 7:00 AM a 11:00 PM</p>
-                <ul class="list-unstyled list-inline list-social-icons">
-
-                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <a class="btn btn-primary" href="blog-post.html">Read More <i class="fa fa-angle-right"></i></a>
             </div>
         </div>
         <!-- /.row -->
 
+        <hr>
+
+
+        <!-- Blog Post Row -->
+        <div class="row">
+            <div class="col-md-1 text-center">
+                <p><i class="fa fa-4x fa-birthday-cake"></i>
+                </p>
+                <p>11 febrero, 2016</p>
+            </div>
+            <div class="col-md-5">
+                <a href="blog-post.html">
+                    <img class="img-responsive img-hover" src="../assets/startbootstrap/img/CME.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <h3><a href="blog-post.html">Lanzamiento sitio oficial <b>CME</b></a>
+                </h3>
+                <p>por <a>Admin</a>
+                </p>
+                <p>Estamos muy emocionados de informarles que con motivo del primer aniversario del <b>CME</b>, estaremos estrenando el nuevo sitio web, donde usted podrá programar citas, comprar medicamentos, leer noticias relevantes, etc.</p>
+                <a class="btn btn-primary" href="blog-post.html">Ver artículo <i class="fa fa-angle-right"></i></a>
+            </div>
+        </div>
         <!-- /.row -->
+
 
         <hr>
 
@@ -150,10 +161,6 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="../assets/startbootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-    <script src="../assets/startbootstrap/js/jqBootstrapValidation.js"></script>
-    <script src="../assets/startbootstrap/js/contact_me.js"></script>
-
 </body>
+
 </html>

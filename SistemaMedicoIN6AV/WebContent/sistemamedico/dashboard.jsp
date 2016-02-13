@@ -65,9 +65,8 @@
                         <a >Medicamentos</a>
                     </li>
                     <li>
-                        <a >Noticias</a>
+                        <a href="/SistemaMedicoIN6AV/sistemamedico/noticias.jsp">Noticias</a>
                     </li>
-                    <li>
                     <li>
                         <a href="/SistemaMedicoIN6AV/sistemamedico/contactenos.jsp">Contáctenos</a>
                     </li>
