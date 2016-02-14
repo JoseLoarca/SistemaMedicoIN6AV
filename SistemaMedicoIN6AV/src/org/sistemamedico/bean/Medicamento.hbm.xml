@@ -19,5 +19,8 @@
 		<many-to-one name="idProveedor" class="org.sistemamedico.Proveedor" lazy="false">
 			<column  name="idProveedor"/>
 		</many-to-one>
+		<property name="descripcion" type="java.lang.String">
+			<column name="descripcion" />
+		</property>
 	</class>
 </hibernate-mapping>
