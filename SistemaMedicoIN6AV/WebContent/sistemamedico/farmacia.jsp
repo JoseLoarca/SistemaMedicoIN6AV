@@ -13,14 +13,14 @@
 	}
 %>
 <html>
-	<head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CME - Contacto</title>
+    <title>CME - Farmacia</title>
     
     <link rel="shortcut icon" href="https://maxcdn.icons8.com/Color/PNG/24/Healthcare/caduceus-24.png">
     
@@ -52,12 +52,12 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
+                    <span class="sr-only"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand"><b>C</b>entro<b> M</b>édico<b> E</b>speranza</a>
+                <a class="navbar-brand" href="index.html"><b>C</b>entro<b> M</b>édico<b> E</b>speranza</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -96,37 +96,89 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Contáctenos</h1>
+                <h1 class="page-header">Medicamentos
+                    <small>De todo para tu salud</small>
+                </h1>
             </div>
         </div>
         <!-- /.row -->
 
-        <!-- Content Row -->
+        <!-- Projects Row -->
         <div class="row">
-            <!-- Map Column -->
-            <div class="col-md-8">
-                <!-- Embedded Google Map -->
-                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.537000482666!2d-90.5381717851312!3d14.62543138978665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a190308858f1%3A0x6795822b2b81d4ac!2sCentro+Educativo+Tecnico+Laboral+KINAL!5e0!3m2!1ses!2sgt!4v1455333817961" width="600" height="450" frameborder="0" style="border:0" allowfullscreen"></iframe>
+            <div class="col-md-3 img-portfolio">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+                </a>
             </div>
-            <!-- Contact Details Column -->
-            <div class="col-md-4">
-                <h3>Detalles</h3>
-                <p>
-                    6 av. 13-54, Zona 7 Colonia Landívar<br>Ciudad de Guatemala, Guatemala<br>
-                </p>
-                <p><i class="fa fa-phone-square"></i> 
-                    <abbr title="Teléfono">T</abbr>: 01-800-ESPERANZA</p>
-                <p><i class="fa fa-envelope"></i> 
-                    <abbr title="Correo Electrónico">C</abbr>: <a href="mailto:name@example.com">centromedico@esperanza.com</a>
-                </p>
-                <p><i class="fa fa-hourglass"></i> 
-                    <abbr title="Horario">H</abbr>: Lunes - Domingo: 7:00 AM a 11:00 PM</p>
-                <ul class="list-unstyled list-inline list-social-icons">
-
-                </ul>
+            <div class="col-md-3 img-portfolio">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 img-portfolio">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 img-portfolio">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+                </a>
             </div>
         </div>
         <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 img-portfolio">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 img-portfolio">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 img-portfolio">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 img-portfolio">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 img-portfolio">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 img-portfolio">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 img-portfolio">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 img-portfolio">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
 
         <!-- /.row -->
 
@@ -149,11 +201,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../assets/startbootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-    <script src="../assets/startbootstrap/js/jqBootstrapValidation.js"></script>
-    <script src="../assets/startbootstrap/js/contact_me.js"></script>
 
 </body>
 </html>

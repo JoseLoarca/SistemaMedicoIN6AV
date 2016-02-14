@@ -66,7 +66,7 @@
                         <a href="/SistemaMedicoIN6AV/sistemamedico/citas.jsp">Citas</a>
                     </li>
                     <li>
-                        <a >Medicamentos</a>
+                        <a href="/SistemaMedicoIN6AV/sistemamedico/farmacia.jsp">Medicamentos</a>
                     </li>
                     <li>
                         <a href="/SistemaMedicoIN6AV/sistemamedico/noticias.jsp">Noticias</a>
@@ -120,7 +120,7 @@
                 <p>por <a>Admin</a>
                 </p>
                 <p>Al menos 105 contagiados del virus zika, que podría causar malformaciones cerebrales a bebés, fueron confirmados en Guatemala, indicó la epidemióloga del Ministerio de Salud, Judith García, en declaraciones a la prensa. </p>
-                <a class="btn btn-primary" href="blog-post.html">Ver artículo <i class="fa fa-caret-right"></i></a>
+                <a class="btn btn-primary" href="">Ver artículo <i class="fa fa-caret-right"></i></a>
             </div>
         </div>
         <!-- /.row -->
@@ -146,7 +146,7 @@
                 <p>por <a>Admin</a>
                 </p>
                 <p>Estamos muy emocionados de informarles que con motivo del primer aniversario del <b>CME</b>, estaremos estrenando el nuevo sitio web, donde usted podrá programar citas, comprar medicamentos, leer noticias relevantes, etc.</p>
-                <a class="btn btn-primary" href="blog-post.html">Ver artículo <i class="fa fa-caret-right"></i></a>
+                <a class="btn btn-primary" href="">Ver artículo <i class="fa fa-caret-right"></i></a>
             </div>
         </div>
         <!-- /.row -->

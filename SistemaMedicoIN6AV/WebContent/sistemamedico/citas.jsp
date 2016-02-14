@@ -66,7 +66,7 @@
                         <a href="/SistemaMedicoIN6AV/sistemamedico/citas.jsp">Citas</a>
                     </li>
                     <li>
-                        <a >Medicamentos</a>
+                        <a href="/SistemaMedicoIN6AV/sistemamedico/farmacia.jsp">Medicamentos</a>
                     </li>
                     <li>
                         <a href="/SistemaMedicoIN6AV/sistemamedico/noticias.jsp">Noticias</a>

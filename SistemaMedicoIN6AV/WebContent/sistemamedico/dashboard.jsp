@@ -64,7 +64,7 @@
                         <a href="/SistemaMedicoIN6AV/sistemamedico/citas.jsp">Citas</a>
                     </li>
                     <li>
-                        <a >Medicamentos</a>
+                        <a href="/SistemaMedicoIN6AV/sistemamedico/farmacia.jsp">Medicamentos</a>
                     </li>
                     <li>
                         <a href="/SistemaMedicoIN6AV/sistemamedico/noticias.jsp">Noticias</a>
@@ -156,7 +156,7 @@
                     </div>
                     <div class="panel-body">
                         <p>También contamos con nuestra propia farmacia, por lo que siempre encontrarás el medicamento que necesites al mejor precio.</p>
-                        <a href="#" class="btn btn-default">Comprar</a>
+                        <a href="/SistemaMedicoIN6AV/sistemamedico/farmacia.jsp" class="btn btn-default">Comprar</a>
                     </div>
                 </div>
             </div>
