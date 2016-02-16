@@ -31,6 +31,7 @@
 
     <!-- Custom CSS -->
     <link href="../assets/startbootstrap/css/modern-business.css" rel="stylesheet">
+    <link href="../assets/dist/css/skins/custom.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="../assets/startbootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -105,28 +106,39 @@
 
 
         <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
+		<div class="row">
+            <div class="col-xs-12">
+              <div class="box">
+                <div class="box-header">
+                  <h3 class="box-title"></h3>
+                  <div class="box-tools">
+                    <div class="input-group" style="width: 150px;">
+                      <div class="input-group-btn">
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /.box-header -->
+                <div class="box-body table-responsive no-padding">
+                  <table class="table table-hover">
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Descripcion</th>
+                      <th>Proveedor</th>
+                      <th>Fecha Vencimiento</th>
+                      <th>Precio</th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </table>
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
             </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-        </div>
+          </div>
         <!-- /.row -->
 
         <hr>
