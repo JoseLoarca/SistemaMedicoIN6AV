@@ -137,8 +137,11 @@
                      </c:forEach>
                     </tbody>
                   </table>
-                  <a href="agregarMed.jsp">Agregar</a>
+                  
                 </div><!-- /.box-body -->
+                <form action="agregarMed.jsp">
+                	<input type="submit" value="Agregar" class="btn btn-default" >
+               	</form>
               </div><!-- /.box -->
             </div>
           </div>

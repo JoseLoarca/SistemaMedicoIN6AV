@@ -111,19 +111,19 @@
         <div class="alert alert-success  fade in" id="alerta">
 	    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 	    <strong>Éxito!</strong> Su cita ha sido programada.
-	  </div>
+	  	</div>
         <div class="box box-info">
         <form id="citaForm">
                <h5>Fecha:</h5>  
                <input type="text" name="txtFecha" id="txtFecha" required placeholder="dd/mm/yy">
                <br>
                <h5>Hora:</h5>
-               <input type="time" name="txtHora" required min="07:00:00" max="23:00:00" id="txtHora" required value="00:00:00"> 
+               <input type="time" name="txtHora" required min="07:00:00" max="23:00:00" id="txtHora" required> 
                <br>
                <h5>Síntomas:</h5>
                <textarea rows="10" cols="50" name="txtSintoma" placeholder="Por favor describa como se siente." id="txtSintoma"></textarea> 
                <br>
-               <input type="button" id="enviarInfo"  class="btn btn-default" value="Programar" >
+               <input type="button" id="enviarInfo" onclick="alertaJS()" class="btn btn-default" value="Programar" >
         </form>
 		</div>
         <hr>
@@ -166,6 +166,12 @@
     			});
     		});
     	});
+    </script>
+    
+    <script>
+    function alertaJS() {
+        alert("Enhorabuena!\nSu cita ha sido programada con éxito!");
+    }
     </script>
     
 

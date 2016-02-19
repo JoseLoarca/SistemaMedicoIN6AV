@@ -112,17 +112,18 @@
         <div class="box box-info">
         <form action="../AgregarMedicamento.do" method="post">
 		<h5>Nombre:</h5>
-		<input type ="text" name="txtNombre">
+		<input type ="text" name="txtNombre" required>
 		<br>
 		<h5>Precio:</h5>
-		<input type="text" name="txtPrecio">
+		<input type="text" name="txtPrecio" required>
 		<br>
 		<h5>Fecha:</h5>
-		<input type ="text" name="txtFechaVencimiento">
+		<input type ="text" name="txtFechaVencimiento" required>
 		<br>
 		<h5>Descripcion:</h5>
-		<textarea rows="10" cols="50" name="txtDescripcion" placeholder="Breve descripción del medicamento." ></textarea> 
+		<textarea rows="10" cols="50" name="txtDescripcion" placeholder="Breve descripción del medicamento." required></textarea> 
 		<br>
+		<h6>*Favor tomar en cuenta que para ver medicamentos agregados es necesario <a href="/SistemaMedicoIN6AV/CerrarSesion.do">cerrar sesión</a> y acceder nuevamente al sistema.</h6>
 		<input type="submit" value="Agregar" class="btn btn-default">
 		</form>
 		</div>
