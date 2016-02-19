@@ -17,6 +17,13 @@
 
 		
 		<mapping class="Rol" package="org.sistemamedico.bean" resource="org/sistemamedico/bean/Rol.hbm.xml"/>
-		<mapping class="Usuario" package="org.sistemamedico.bean" resource="org/sistemamedico/bean/Usuario.hbm.xml"/> 
+		<mapping class="Usuario" package="org.sistemamedico.bean" resource="org/sistemamedico/bean/Usuario.hbm.xml"/>
+		<mapping class="Cita" package="org.sistemamedico.bean" resource="org/sistemamedico/bean/Cita.hbm.xml"/>
+		<mapping class="Compra" package="org.sistemamedico.bean" resource="org/sistemamedico/bean/Compra.hbm.xml"/>
+		<mapping class="Enfermedad" package="org.sistemamedico.bean" resource="org/sistemamedico/bean/Enfermedad.hbm.xml"/>
+		<mapping class="Medicamento" package="org.sistemamedico.bean" resource="org/sistemamedico/bean/Medicamento.hbm.xml"/>
+		<mapping class="Proveedor" package="org.sistemamedico.bean" resource="org/sistemamedico/bean/Proveedor.hbm.xml"/>
+		<mapping class="Receta" package="org.sistemamedico.bean" resource="org/sistemamedico/bean/Receta.hbm.xml"/>
+		<mapping class="Stock" package="org.sistemamedico.bean" resource="org/sistemamedico/bean/Stock.hbm.xml"/> 
 	</session-factory>
 </hibernate-configuration>

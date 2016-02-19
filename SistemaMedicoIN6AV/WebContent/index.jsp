@@ -35,11 +35,11 @@
         <p class="login-box-msg">Ingrese sus datos para acceder al sistema.</p>
         <form action="AutenticarUsuario.do" method="post">
           <div class="form-group has-feedback">
-            <input type="text" class="form-control" placeholder="Ingrese su usuario..." required name="txtNick">
+            <input type="text" class="form-control" placeholder="Ingrese su usuario..." name="txtNick" required>
             <span class="glyphicon glyphicon-user form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
-            <input type="password" class="form-control" placeholder="Ingrese su contraseña..." required name="txtContraseña">
+            <input type="password" class="form-control" placeholder="Ingrese su contraseña..."  name="txtContraseña" required>
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
           </div>
           <div class="row">

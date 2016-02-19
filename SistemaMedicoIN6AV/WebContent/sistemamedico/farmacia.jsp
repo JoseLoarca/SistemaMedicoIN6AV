@@ -1,17 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%Object usr=request.getSession().getAttribute("usuario");
 	if(usr!=null){
 		//response.sendRedirect("/SistemaMedicoIN6AV/sistemamedico/dashboard.jsp");
 	}else{
 		%>	
-		<jsp:forward page="/sistemamedico/error.jsp">
-			<jsp:param name="error" value="Para acceder al sistema, inicie sesión." />
-		</jsp:forward>		
+		<jsp:forward page="/sistemamedico/error.jsp"/>		
 		<%
 	}
-%>
+%> 
 <html>
 <head>
     <meta charset="utf-8">
@@ -119,7 +118,8 @@
                   </div>
                 </div><!-- /.box-header -->
                 <div class="box-body table-responsive no-padding">
-                  <table class="table table-hover">
+                 <table class="table table-hover">
+                  <thead>
                     <tr>
                       <th>Nombre</th>
                       <th>Descripcion</th>
@@ -127,13 +127,18 @@
                       <th>Fecha Vencimiento</th>
                       <th>Precio</th>
                     </tr>
-                    <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
+                   </thead>
+                   <tbody>
+                   	  <c:forEach items="${listaMedicamento}" var="medicamento">
+                    	<tr>
+                      		<td><c:out value="${medicamento.getNombre()}"/></td>
+                      		<td><c:out value="${medicamento.getDescripcion()}"/></td>
+                      		<td><c:out value="${medicamento.getIdProveedor().getNombre()}"/></td>
+                      		<td><c:out value="${medicamento.getFechaVencimiento()}"/></td>
+                      		<td><c:out value="${medicamento.getPrecio()}"/></td>
+                    	</tr>
+                     </c:forEach>
+                    </tbody>
                   </table>
                 </div><!-- /.box-body -->
               </div><!-- /.box -->

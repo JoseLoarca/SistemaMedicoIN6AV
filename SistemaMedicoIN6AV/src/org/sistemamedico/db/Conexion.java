@@ -6,6 +6,8 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import org.sistemamedico.bean.Medicamento;
+import org.sistemamedico.bean.Usuario;
 
 
 public class Conexion {
@@ -32,6 +34,8 @@ public class Conexion {
             throw new HibernateException(ex);
         }
     }
+
+	@SuppressWarnings("unchecked")
 	public List<Object> listar(String consulta){
 		Session miSesion=sesion.getCurrentSession();
 		List<Object> lista=null;
@@ -44,9 +48,17 @@ public class Conexion {
 		Session miSesion=sesion.getCurrentSession();
 		List<Object> lista=null;
 		miSesion.beginTransaction();
-		lista=miSesion.createQuery("From Usuario u where u.nick='"+nick+"' and contraseña='"+contraseña+"'").list();
+		lista = miSesion.createQuery("From Usuario u where u.nick='"+nick+"' and contraseña='"+contraseña+"'").list();
 		miSesion.getTransaction().commit();
 		return lista;
+	}
+	public Usuario autenticar(String nick,String contrasena) {
+		Session miSesion = sesion.getCurrentSession();
+		Usuario usuario = null;
+		miSesion.beginTransaction();
+		usuario =(Usuario) miSesion.createQuery("From Usuario u where u.nick='"+nick+"' and contraseña='"+contrasena+"'").uniqueResult();
+		miSesion.getTransaction().commit();
+		return usuario;
 	}
 	public void agregar (Object agregar){
 		Session session=sesion.getCurrentSession();

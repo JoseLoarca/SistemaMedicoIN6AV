@@ -1,6 +1,7 @@
 package org.sistemamedico.servlet;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -17,7 +18,7 @@ public class ServletListarMedicamento extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		RequestDispatcher despachador = null;
 		req.setAttribute("listaMedicamento", Conexion.getInstancia().listar("From Medicamento"));
-		despachador=req.getRequestDispatcher("SistemaMedicoIN6AV/farmacia.jsp");
+		despachador = req.getRequestDispatcher("sistemamedico/farmacia.jsp");
 		despachador.forward(req, resp);
 	}
 	@Override
