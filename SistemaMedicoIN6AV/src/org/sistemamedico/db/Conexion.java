@@ -56,7 +56,13 @@ public class Conexion {
 		Session miSesion = sesion.getCurrentSession();
 		Usuario usuario = null;
 		miSesion.beginTransaction();
-		usuario =(Usuario) miSesion.createQuery("From Usuario u where u.nick='"+nick+"' and contraseña='"+contrasena+"'").uniqueResult();
+		List listUsuario =  miSesion.createQuery("From Usuario u where u.nick='"+nick+"' and contraseña='"+contrasena+"'").list();
+		if(!listUsuario.isEmpty())
+		{
+			usuario = (Usuario) listUsuario.get(0);
+		} else {
+			usuario = null;
+		}
 		miSesion.getTransaction().commit();
 		return usuario;
 	}

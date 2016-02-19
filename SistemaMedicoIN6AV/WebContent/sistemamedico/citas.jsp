@@ -115,7 +115,7 @@
         <div class="box box-info">
         <form id="citaForm">
                <h5>Fecha:</h5>  
-               <input type="text" name="txtFecha" id="txtFecha" required placeholder="dd/mm/yy">
+               <input type="text" name="txtFecha" id="txtFecha" required placeholder="dd/mm/yyyy">
                <br>
                <h5>Hora:</h5>
                <input type="time" name="txtHora" required min="07:00:00" max="23:00:00" id="txtHora" required> 

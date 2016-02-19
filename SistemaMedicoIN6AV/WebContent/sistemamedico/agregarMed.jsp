@@ -118,7 +118,7 @@
 		<input type="text" name="txtPrecio" required>
 		<br>
 		<h5>Fecha:</h5>
-		<input type ="text" name="txtFechaVencimiento" required>
+		<input type ="text" name="txtFechaVencimiento" id="txtFecha" placeholder="dd/mm/yyyy" required>
 		<br>
 		<h5>Descripcion:</h5>
 		<textarea rows="10" cols="50" name="txtDescripcion" placeholder="Breve descripción del medicamento." required></textarea> 
@@ -143,7 +143,7 @@
 
     <!-- jQuery -->
     <script src="../assets/startbootstrap/js/jquery.js"></script>
-     <script src="../assets/jquery/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script src="../assets/jquery/jquery.maskedinput.min.js" type="text/javascript"></script>
     
     <!-- Bootstrap Core JavaScript -->
     <script src="../assets/startbootstrap/js/bootstrap.min.js"></script>
@@ -151,7 +151,8 @@
     <script>
     $(document).on('ready',function(){
     	$("#txtFecha").mask("99/99/9999");
-	});
+    	
+    	});
     </script>
     
 

@@ -28,7 +28,7 @@ public class AgregarCita extends HttpServlet{
 	    /*despachador=req.getRequestDispatcher("/sistemamedico/citas.jsp");
 		despachador.forward(req, resp );*/
 	    
-	    resp.sendRedirect("/PruebaCME/sistemamedico/citas.jsp");
+	    resp.sendRedirect("/SistemaMedicoIN6AV/sistemamedico/citas.jsp");
 
 	  }
 	  protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
