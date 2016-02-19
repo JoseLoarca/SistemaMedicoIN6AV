@@ -68,7 +68,9 @@
                             <li>
                                 <a href="/SistemaMedicoIN6AV/sistemamedico/listarCitas.jsp">Ver Citas</a>
                             </li>
-  
+  							<li>
+  								<a href="/SistemaMedicoIN6AV/sistemamedico/imprimirCitas.jsp">Imprimir Reporte</a>
+  							</li>
                         </ul>
                     </li>
                     <li>
