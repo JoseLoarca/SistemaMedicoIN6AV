@@ -73,7 +73,7 @@
                       		<td>${medicamento.descripcion}</td>
                       		<td>${medicamento.idProveedor.getNombre()}</td>
                       		<td>${medicamento.fechaVencimiento}</td>
-                      		<td>${medicamento.precio}</td>
+                      		<td>Q.${medicamento.precio}</td>
                      </c:forEach>
                     </tbody>
             </table>

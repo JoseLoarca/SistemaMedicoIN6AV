@@ -41,7 +41,7 @@
             <span class="glyphicon glyphicon-user form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
-            <input type="number" class="form-control" required placeholder="Teléfono" name="txtTelefono">
+            <input type="text" class="form-control" required name="txtTelefono" id="txtTelefono" placeholder="Teléfono">
             <span class="glyphicon glyphicon-phone form-control-feedback"></span>
           </div>
           <div class="form-group has-feedback">
@@ -85,10 +85,17 @@
 
     <!-- jQuery 2.1.4 -->
     <script src="../assets/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="../assets/jquery/jquery.maskedinput.min.js" type="text/javascript"></script>
     <!-- Bootstrap 3.3.5 -->
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <!-- iCheck -->
     <script src="../assets/plugins/iCheck/icheck.min.js"></script>
+    <script>
+    $(document).on('ready',function(){
+    	$("#txtTelefono").mask("9999 9999");
+    	
+    	});
+    </script>
     <script>
       $(function () {
         $('input').iCheck({
