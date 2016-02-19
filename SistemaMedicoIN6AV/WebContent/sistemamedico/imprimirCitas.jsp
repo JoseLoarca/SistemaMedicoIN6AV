@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CME - Inventario de Medicamentos</title>
+    <title>CME - Informe de Citas</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -59,23 +59,22 @@
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>Nombre</th>
-                  <th>Descripción</th>
-                  <th>Proveedor</th>
-                  <th>F. Vencimiento</th>
-                  <th>Precio</th>
+                  <th>Cliente</th>
+                  <th>Fecha</th>
+                  <th>Hora</th>
+                  <th>Síntoma</th>
                 </tr>
               </thead>
               <tbody>
-                   	  <c:forEach items="${listaMedicamento}" var="medicamento">
-                    	<tr>
-                      		<td>${medicamento.nombre}</td>
-                      		<td>${medicamento.descripcion}</td>
-                      		<td>${medicamento.idProveedor.getNombre()}</td>
-                      		<td>${medicamento.fechaVencimiento}</td>
-                      		<td>Q.${medicamento.precio}</td>
-                     </c:forEach>
-                    </tbody>
+       				<c:forEach items="${listaCita}" var="cita">
+            			<tr>
+                  			<td>${cita.getIdUsuario().getNombre()}</td>
+           		  			<td>${cita.getFecha()}</td>
+           	      			<td>${cita.getHora()}</td>
+                  			<td>${cita.getSintoma()}</td>
+            			</tr>
+        			</c:forEach>
+        		</tbody>
             </table>
           </div><!-- /.col -->
         </div><!-- /.row -->

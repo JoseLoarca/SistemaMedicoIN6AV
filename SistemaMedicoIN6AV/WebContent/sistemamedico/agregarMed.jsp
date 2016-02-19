@@ -117,7 +117,7 @@
 		<h5>Precio:</h5>
 		<input type="text" name="txtPrecio" required>
 		<br>
-		<h5>Fecha:</h5>
+		<h5>Fecha Vencimiento:</h5>
 		<input type ="text" name="txtFechaVencimiento" id="txtFecha" placeholder="dd/mm/yyyy" required>
 		<br>
 		<h5>Descripcion:</h5>
