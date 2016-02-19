@@ -33,7 +33,7 @@
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg">Ingrese sus datos para acceder al sistema.</p>
-        <form action="AutenticarUsuario.do" method="post">
+        <form action="/SistemaMedicoIN6AV/AutenticarUsuario.do" method="post">
           <div class="form-group has-feedback">
             <input type="text" class="form-control" placeholder="Ingrese su usuario..." name="txtNick" required>
             <span class="glyphicon glyphicon-user form-control-feedback"></span>

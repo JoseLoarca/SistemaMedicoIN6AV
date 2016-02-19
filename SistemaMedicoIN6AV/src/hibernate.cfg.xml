@@ -4,7 +4,7 @@
 "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
 	<session-factory>
-		<property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
 		<property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
 		<property name="hibernate.connection.username">SISTEMAMEDICO</property>
 		<property name="hibernate.connection.password">123</property>

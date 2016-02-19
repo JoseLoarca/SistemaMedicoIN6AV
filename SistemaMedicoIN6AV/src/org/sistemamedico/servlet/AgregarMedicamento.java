@@ -26,7 +26,7 @@ public class AgregarMedicamento extends HttpServlet{
 		);
 		Conexion.getInstancia().agregar(medicamento);
 
-		resp.sendRedirect("/PruebaCME/sistemamedico/agregarMed.jsp");
+		resp.sendRedirect("/SistemaMedicoIN6AV/sistemamedico/agregarMed.jsp");
 	} 
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
 		doPost(req, resp);
