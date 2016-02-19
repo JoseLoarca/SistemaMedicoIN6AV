@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.sistemamedico.bean.Enfermedad" table="enfermedad">
+		<id name="idEnfermedad" type="java.lang.Integer">
+			<column name="idEnfermedad" />
+            <generator class="assigned" />
+		</id>
+		<property name="nombre" type="java.lang.String">
+            <column name="nombre" />
+        </property>
+		<property name="cura" type="java.lang.String">
+		    <column name="cura" />
+		</property>
+		<many-to-one name="idReceta" class="org.sistemamedico.bean.Receta" lazy="false">
+			<column  name="idReceta"/>
+		</many-to-one>
+	</class>
+</hibernate-mapping>

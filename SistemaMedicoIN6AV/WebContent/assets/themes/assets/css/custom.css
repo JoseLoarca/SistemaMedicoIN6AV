@@ -1,0 +1,11 @@
+/* -----------------------------------------
+   Custom.css - put your own changes here 
+----------------------------------------- */
+body.error-page {
+  margin-top: 5%;
+  background-color: #f0f5f5;
+
+body.error-page h1.error-number {
+  text-align: center;
+  font-size: 20em;
+  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;

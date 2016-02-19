@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.sistemamedico.bean.Cita" table="cita">
+		<id name="idCita" type="java.lang.Integer">
+			<column name="idCita" />
+           <generator class="sequence-identity">
+				<param name="sequence">CITA_SEQ</param>
+			</generator>
+		</id>
+		<property name="fecha" type="java.lang.String">
+            <column name="fecha" />
+        </property>
+		<property name="hora" type="java.lang.String">
+		    <column name="hora" />
+		</property>
+		<many-to-one name="idUsuario" class="org.sistemamedico.bean.Usuario" lazy="false">
+			<column  name="idUsuario"/>
+		</many-to-one>
+		<property name="sintoma" type="java.lang.String">
+			<column name="sintoma" />
+		</property>
+	</class>
+</hibernate-mapping>
