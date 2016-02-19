@@ -62,8 +62,14 @@
                     <li>
                         <a href="/SistemaMedicoIN6AV/sistemamedico/citas.jsp">Citas</a>
                     </li>
-                    <li>
-                        <a href="/SistemaMedicoIN6AV/sistemamedico/farmacia.jsp">Medicamentos</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Medicamentos<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/SistemaMedicoIN6AV/sistemamedico/imprimirMed.jsp">Imprimir Inventario</a>
+                            </li>
+  
+                        </ul>
                     </li>
                     <li>
                         <a href="/SistemaMedicoIN6AV/sistemamedico/noticias.jsp">Noticias</a>
@@ -123,7 +129,6 @@
                       <th>Proveedor</th>
                       <th>Fecha Vencimiento</th>
                       <th>Precio</th>
-                      <th>Más</th>
                     </tr>
                    </thead> 
                    <tbody>
@@ -134,16 +139,15 @@
                       		<td>${medicamento.idProveedor.getNombre()}</td>
                       		<td>${medicamento.fechaVencimiento}</td>
                       		<td>${medicamento.precio}</td>
-                      		<td><a href="ServletEliminarMedicamento.do?idMedicamento=${medicamento.getIdMedicamento()}">Eliminar</a></td>
-                    	</tr>
                      </c:forEach>
                     </tbody>
                   </table>
                   
                 </div><!-- /.box-body -->
                 <form action="agregarMed.jsp">
-                	<input type="submit" value="Agregar" class="btn btn-default" >
-               	</form>
+                	<input type="submit" value="Agregar" class="btn btn-default" > 
+               	</form>       	
+
               </div><!-- /.box -->
             </div>
           </div>
