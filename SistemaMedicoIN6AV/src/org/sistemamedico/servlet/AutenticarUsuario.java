@@ -30,6 +30,7 @@ public class AutenticarUsuario extends HttpServlet {
 				HttpSession sesion = req.getSession(true);
 				sesion.setAttribute("usuario", usuario);
 				sesion.setAttribute("listaMedicamento", Conexion.getInstancia().listar("From Medicamento"));
+				sesion.setAttribute("listaCita", Conexion.getInstancia().listar("From Cita"));
 			} else {
 				despachador=req.getRequestDispatcher("/SistemaMedicoIN6AV/sistemamedico/dashboard.jsp");
 				HttpSession sesion = req.getSession(true);

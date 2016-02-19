@@ -16,7 +16,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CME - Farmacia</title>
+    <title>CME - Ver Citas</title>
     
     <link rel="shortcut icon" href="https://maxcdn.icons8.com/Color/PNG/24/Healthcare/caduceus-24.png">
     
@@ -93,8 +93,8 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Medicamentos
-                    <small>De todo para tu salud</small>
+                <h1 class="page-header">Citas
+                    <small>Ver citas programadas</small>
                 </h1>
             </div>
         </div>
@@ -115,34 +115,30 @@
                   </div>
                 </div><!-- /.box-header -->
                 <div class="box-body table-responsive no-padding">
-                 <table class="table table-hover">
-                  <thead>
-                    <tr>
-                      <th>Nombre</th>
-                      <th>Descripcion</th>
-                      <th>Proveedor</th>
-                      <th>Fecha Vencimiento</th>
-                      <th>Precio</th>
-                      <th>Más</th>
-                    </tr>
-                   </thead> 
-                   <tbody>
-                   	  <c:forEach items="${listaMedicamento}" var="medicamento">
-                    	<tr>
-                      		<td>${medicamento.nombre}</td>
-                      		<td>${medicamento.descripcion}</td>
-                      		<td>${medicamento.idProveedor.getNombre()}</td>
-                      		<td>${medicamento.fechaVencimiento}</td>
-                      		<td>${medicamento.precio}</td>
-                      		<td><a href="ServletEliminarMedicamento.do?idMedicamento=${medicamento.getIdMedicamento()}">Eliminar</a></td>
-                    	</tr>
-                     </c:forEach>
-                    </tbody>
-                  </table>
+                <table class="table table-hover">
+        		<thead>
+            		<tr>
+                		 <th>Cliente</th>
+                 		<th>Fecha</th>
+                 		<th>Hora</th>
+                 		<th>Síntoma</th>
+            		</tr>
+       			</thead>
+       			<tbody>
+       				<c:forEach items="${listaCita}" var="cita">
+            			<tr>
+                  			<td>${cita.getIdUsuario().getNombre()}</td>
+           		  			<td>${cita.getFecha()}</td>
+           	      			<td>${cita.getHora()}</td>
+                  			<td>${cita.getSintoma()}</td>
+            			</tr>
+        			</c:forEach>
+        		</tbody>
+      			</table>
                   
                 </div><!-- /.box-body -->
-                <form action="agregarMed.jsp">
-                	<input type="submit" value="Agregar" class="btn btn-default" >
+                <form action="citas.jsp">
+                	<input type="submit" value="Programar Cita" class="btn btn-default" >
                	</form>
               </div><!-- /.box -->
             </div>

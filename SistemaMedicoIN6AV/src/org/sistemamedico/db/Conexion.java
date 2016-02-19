@@ -86,4 +86,10 @@ public class Conexion {
 		session.getTransaction().commit();
 		return obj;
 	}
+	public void eliminar(Object obj){
+		Session session=sesion.getCurrentSession();
+		session.beginTransaction();
+		session.delete(obj);
+		session.getTransaction().commit();
+	}
 }

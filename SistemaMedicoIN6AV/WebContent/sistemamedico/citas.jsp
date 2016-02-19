@@ -62,8 +62,14 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/SistemaMedicoIN6AV/sistemamedico/citas.jsp">Citas</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Citas<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/SistemaMedicoIN6AV/sistemamedico/listarCitas.jsp">Ver Citas</a>
+                            </li>
+  
+                        </ul>
                     </li>
                     <li>
                         <a href="/SistemaMedicoIN6AV/sistemamedico/farmacia.jsp">Medicamentos</a>
@@ -123,7 +129,7 @@
                <h5>Síntomas:</h5>
                <textarea rows="10" cols="50" name="txtSintoma" placeholder="Por favor describa como se siente." id="txtSintoma"></textarea> 
                <br>
-               <input type="button" id="enviarInfo" onclick="alertaJS()" class="btn btn-default" value="Programar" >
+               <input type="button" id="enviarInfo" class="btn btn-default" value="Programar" >
         </form>
 		</div>
         <hr>
@@ -166,14 +172,7 @@
     			});
     		});
     	});
-    </script>
-    
-    <script>
-    function alertaJS() {
-        alert("Enhorabuena!\nSu cita ha sido programada con éxito!");
-    }
-    </script>
-    
+    </script>    
 
 </body>
 
