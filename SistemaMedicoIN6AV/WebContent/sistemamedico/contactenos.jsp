@@ -57,7 +57,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand"><b>C</b>entro<b> M</b>édico<b> E</b>speranza</a>
+                <a href="/SistemaMedicoIN6AV/sistemamedico/dashboard.jsp" class="navbar-brand"><b>C</b>entro<b> M</b>édico<b> E</b>speranza</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

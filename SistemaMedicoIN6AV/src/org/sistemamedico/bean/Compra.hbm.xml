@@ -13,10 +13,10 @@
 		<property name="cantidad" type="java.lang.Integer">
 		    <column name="cantidad" />
 		</property>
-		<property name="fecha" type="java.lang.Date">
+		<property name="fecha" type="date">
 		    <column name="fecha" />
 		</property>
-		<many-to-one name="idUsuario" class="org.sistemamedico.Usuario" lazy="false">
+		<many-to-one name="idUsuario" class="org.sistemamedico.bean.Usuario" lazy="false">
 			<column  name="idUsuario"/>
 		</many-to-one>
 	</class>

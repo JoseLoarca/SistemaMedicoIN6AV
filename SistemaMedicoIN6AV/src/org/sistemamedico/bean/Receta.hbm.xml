@@ -10,7 +10,7 @@
 		<property name="nombre" type="java.lang.String">
             <column name="nombre" />
         </property>
-		<many-to-one name="idMedicamento" class="org.sistemamedico.Medicamento" lazy="false">
+		<many-to-one name="idMedicamento" class="org.sistemamedico.bean.Medicamento" lazy="false">
 			<column  name="idMedicamento"/>
 		</many-to-one>
 	</class>

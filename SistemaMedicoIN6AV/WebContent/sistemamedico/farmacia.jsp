@@ -2,14 +2,11 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%Object usr=request.getSession().getAttribute("usuario");
-	if(usr!=null){
-		//response.sendRedirect("/SistemaMedicoIN6AV/sistemamedico/dashboard.jsp");
-	}else{
-		%>	
-		<jsp:forward page="/sistemamedico/error.jsp"/>		
-		<%
-	}
+<%@ page import="org.sistemamedico.bean.Usuario" %>
+<%
+	HttpSession miSesion = request.getSession();
+	Object usr = miSesion.getAttribute("usuario");
+	Usuario usuario = (Usuario) usr;
 %> 
 <html>
 <head>
@@ -57,7 +54,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><b>C</b>entro<b> M</b>édico<b> E</b>speranza</a>
+                <a href="/SistemaMedicoIN6AV/sistemamedico/dashboard.jsp" class="navbar-brand" href="index.html"><b>C</b>entro<b> M</b>édico<b> E</b>speranza</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -131,15 +128,16 @@
                    <tbody>
                    	  <c:forEach items="${listaMedicamento}" var="medicamento">
                     	<tr>
-                      		<td><c:out value="${medicamento.getNombre()}"/></td>
-                      		<td><c:out value="${medicamento.getDescripcion()}"/></td>
-                      		<td><c:out value="${medicamento.getIdProveedor().getNombre()}"/></td>
-                      		<td><c:out value="${medicamento.getFechaVencimiento()}"/></td>
-                      		<td><c:out value="${medicamento.getPrecio()}"/></td>
+                      		<td>${medicamento.nombre}</td>
+                      		<td>${medicamento.descripcion}</td>
+                      		<td>${medicamento.idProveedor.getNombre()}</td>
+                      		<td>${medicamento.fechaVencimiento}</td>
+                      		<td>${medicamento.precio}</td>
                     	</tr>
                      </c:forEach>
                     </tbody>
                   </table>
+                  <a href="agregarMed.jsp">Agregar</a>
                 </div><!-- /.box-body -->
               </div><!-- /.box -->
             </div>

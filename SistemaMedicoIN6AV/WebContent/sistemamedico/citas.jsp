@@ -23,9 +23,10 @@
     <title>CME - Citas</title>
     
     <link rel="shortcut icon" href="https://maxcdn.icons8.com/Color/PNG/24/Healthcare/caduceus-24.png">
-    
+ 
     <link href="../assets/startbootstrap/css/custom.css" rel="stylesheet" />
-
+          
+    
     <!-- Bootstrap Core CSS -->
     <link href="../assets/startbootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -34,7 +35,6 @@
 
     <!-- Custom Fonts -->
     <link href="../assets/startbootstrap/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -57,7 +57,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand"><b>C</b>entro<b> M</b>édico<b> E</b>speranza</a>
+                <a href="/SistemaMedicoIN6AV/sistemamedico/dashboard.jsp" class="navbar-brand"><b>C</b>entro<b> M</b>édico<b> E</b>speranza</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -108,23 +108,24 @@
                 <h4>Ingrese los datos requeridos para programar una cita.</h4>
             </div>
         </div>
-        <!-- /.row -->
-        <form action="" method="post" onSubmit="alert('Su cita ha sido programada, lo estaremos esperando!');">
+        <div class="alert alert-success  fade in" id="alerta">
+	    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	    <strong>Éxito!</strong> Su cita ha sido programada.
+	  </div>
+        <div class="box box-info">
+        <form id="citaForm">
                <h5>Fecha:</h5>  
-               <input type="date" name="txtFecha" required min="2016-02-13" value="2016-02-13" >
+               <input type="text" name="txtFecha" id="txtFecha" required placeholder="dd/mm/yy">
                <br>
                <h5>Hora:</h5>
-               <input type="time" name="txtHora" required min="07:00:00" max="23:00:00" required value="12:00:00"> 
-               <br>
-               <h5>Enfermedad:</h5>
-               <input type="text" name="txtEnfermedad" placeholder="Opcional.">
+               <input type="time" name="txtHora" required min="07:00:00" max="23:00:00" id="txtHora" required value="00:00:00"> 
                <br>
                <h5>Síntomas:</h5>
-               <textarea rows="10" cols="50" name="txtSintoma" placeholder="Opcional."></textarea> 
+               <textarea rows="10" cols="50" name="txtSintoma" placeholder="Por favor describa como se siente." id="txtSintoma"></textarea> 
                <br>
-               <input type="submit" class="btn btn-default" value="Programar" >
+               <input type="button" id="enviarInfo"  class="btn btn-default" value="Programar" >
         </form>
-
+		</div>
         <hr>
 
         <!-- Footer -->
@@ -141,14 +142,30 @@
 
     <!-- jQuery -->
     <script src="../assets/startbootstrap/js/jquery.js"></script>
-
+     <script src="../assets/jquery/jquery.maskedinput.min.js" type="text/javascript"></script>
+    
     <!-- Bootstrap Core JavaScript -->
     <script src="../assets/startbootstrap/js/bootstrap.min.js"></script>
-    
+       
     <script>
-    $('txtFecha').datepicker({
-    minDate : 0
-	});
+    $(document).on('ready',function(){
+    	$("#txtFecha").mask("99/99/9999");
+    	$("#alerta").hide();
+    	$("#enviarInfo").on('click',function(){
+    		var _txtFecha = $("#txtFecha").val();
+    		var _txtHora = $("#txtHora").val();
+    		var _txtSintoma = $("#txtSintoma").val();
+    		
+    		document.getElementById("citaForm").reset();
+    		
+    		$.post("../AgregarCita.do",{
+    			txtFecha: _txtFecha, txtHora: _txtHora, txtSintoma: _txtSintoma
+    		}, function(response){
+	    			console.log("hola");
+	    			$("#alerta").show(1000);
+    			});
+    		});
+    	});
     </script>
     
 

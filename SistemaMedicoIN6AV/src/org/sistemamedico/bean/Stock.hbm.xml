@@ -7,10 +7,10 @@
 			<column name="idStock" />
             <generator class="assigned" />
 		</id>
-		<many-to-one name="idMedicamento" class="org.sistemamedico.Medicamento" lazy="false">
+		<many-to-one name="idMedicamento" class="org.sistemamedico.bean.Medicamento" lazy="false">
 			<column  name="idMedicamento"/>
 		</many-to-one>
-		<many-to-one name="idCompra" class="org.sistemamedico.Compra" lazy="false">
+		<many-to-one name="idCompra" class="org.sistemamedico.bean.Compra" lazy="false">
 			<column  name="idCompra"/>
 		</many-to-one>
 	</class>

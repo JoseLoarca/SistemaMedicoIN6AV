@@ -5,7 +5,9 @@
 	<class name="org.sistemamedico.bean.Medicamento" table="medicamento">
 		<id name="idMedicamento" type="java.lang.Integer">
 			<column name="idMedicamento" />
-            <generator class="assigned" />
+            <generator class="sequence-identity">
+				<param name="sequence">MEDICAMENTO_SEQ</param>
+			</generator>
 		</id>
 		<property name="nombre" type="java.lang.String">
             <column name="nombre" />
@@ -13,10 +15,10 @@
 		<property name="precio" type="java.lang.Double">
 		    <column name="precio" />
 		</property>
-		<property name="fechaVencimiento" type="java.lang.Date">
+		<property name="fechaVencimiento" type="java.lang.String">
 		    <column name="fechaVencimiento" />
 		</property>
-		<many-to-one name="idProveedor" class="org.sistemamedico.Proveedor" lazy="false">
+		<many-to-one name="idProveedor" class="org.sistemamedico.bean.Proveedor" lazy="false">
 			<column  name="idProveedor"/>
 		</many-to-one>
 		<property name="descripcion" type="java.lang.String">

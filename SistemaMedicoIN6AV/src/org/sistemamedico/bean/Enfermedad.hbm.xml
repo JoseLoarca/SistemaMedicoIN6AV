@@ -13,7 +13,7 @@
 		<property name="cura" type="java.lang.String">
 		    <column name="cura" />
 		</property>
-		<many-to-one name="idReceta" class="org.sistemamedico.Receta" lazy="false">
+		<many-to-one name="idReceta" class="org.sistemamedico.bean.Receta" lazy="false">
 			<column  name="idReceta"/>
 		</many-to-one>
 	</class>

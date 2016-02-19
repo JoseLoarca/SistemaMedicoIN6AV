@@ -1,12 +1,10 @@
 package org.sistemamedico.bean;
 
-import java.util.Date;
-
 public class Medicamento {
 	private Integer idMedicamento;
 	private String nombre;
 	private Double precio;
-	private Date fechaVencimiento;
+	private String fechaVencimiento;
 	private Proveedor idProveedor;
 	private String descripcion;
 	public Integer getIdMedicamento() {
@@ -27,10 +25,10 @@ public class Medicamento {
 	public void setPrecio(Double precio) {
 		this.precio = precio;
 	}
-	public Date getFechaVencimiento() {
+	public String getFechaVencimiento() {
 		return fechaVencimiento;
 	}
-	public void setFechaVencimiento(Date fechaVencimiento) {
+	public void setFechaVencimiento(String fechaVencimiento) {
 		this.fechaVencimiento = fechaVencimiento;
 	}
 	public Proveedor getIdProveedor() {
@@ -39,13 +37,13 @@ public class Medicamento {
 	public void setIdProveedor(Proveedor idProveedor) {
 		this.idProveedor = idProveedor;
 	}
-	public String descripcion(){
+	public String getDescripcion(){
 		return descripcion;
 	}
 	public void setDescripcion(String descripcion){
 		this.descripcion = descripcion;
 	}
-	public Medicamento(Integer idMedicamento, String nombre, Double precio, Date fechaVencimiento,
+	public Medicamento(Integer idMedicamento, String nombre, Double precio, String fechaVencimiento,
 			Proveedor idProveedor, String descripcion) {
 		super();
 		this.idMedicamento = idMedicamento;

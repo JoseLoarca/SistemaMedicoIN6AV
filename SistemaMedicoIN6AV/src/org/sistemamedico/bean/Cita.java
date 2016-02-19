@@ -1,13 +1,11 @@
 package org.sistemamedico.bean;
 
-import java.util.Date;
 
 public class Cita {
 	private Integer idCita;
-	private Date fecha;
+	private String fecha;
 	private String hora;
 	private Usuario idUsuario;
-	private Enfermedad idEnfermedad;
 	private String sintoma;
 	public Integer getIdCita() {
 		return idCita;
@@ -15,10 +13,10 @@ public class Cita {
 	public void setIdCita(Integer idCita) {
 		this.idCita = idCita;
 	}
-	public Date getFecha() {
+	public String getFecha() {
 		return fecha;
 	}
-	public void setFecha(Date fecha) {
+	public void setFecha(String fecha) {
 		this.fecha = fecha;
 	}
 	public String getHora() {
@@ -33,25 +31,18 @@ public class Cita {
 	public void setIdUsuario(Usuario idUsuario) {
 		this.idUsuario = idUsuario;
 	}
-	public Enfermedad getIdEnfermedad() {
-		return idEnfermedad;
-	}
-	public void setIdEnfermedad(Enfermedad idEnfermedad) {
-		this.idEnfermedad = idEnfermedad;
-	}
 	public String getSintoma(){
 		return sintoma;
 	}
 	public void setSintoma(String sintoma){
 		this.sintoma=sintoma;
 	}
-	public Cita(Integer idCita, Date fecha, String hora, Usuario idUsuario, Enfermedad idEnfermedad, String sintoma) {
+	public Cita(Integer idCita, String fecha, String hora, Usuario idUsuario, String sintoma) {
 		super();
 		this.idCita = idCita;
 		this.fecha = fecha;
 		this.hora = hora;
 		this.idUsuario = idUsuario;
-		this.idEnfermedad = idEnfermedad;
 		this.sintoma = sintoma;
 	}
 	public Cita() {

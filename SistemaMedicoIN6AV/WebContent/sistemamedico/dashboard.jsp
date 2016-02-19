@@ -24,16 +24,16 @@
     
     <link rel="shortcut icon" href="https://maxcdn.icons8.com/Color/PNG/24/Healthcare/caduceus-24.png">
     
-    <link href="assets/startbootstrap/css/custom.css" rel="stylesheet" />
+    <link href="../assets/startbootstrap/css/custom.css" rel="stylesheet" />
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="assets/startbootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/startbootstrap/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/startbootstrap/css/modern-business.css">
+    <link rel="stylesheet" href="../assets/startbootstrap/css/modern-business.css">
 
     <!-- Custom Fonts -->
-    <link rel="stylesheet" href="assets/startbootstrap/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/startbootstrap/font-awesome/css/font-awesome.min.css" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand"><b>C</b>entro<b> M</b>édico<b> E</b>speranza</a>
+                <a href="/SistemaMedicoIN6AV/sistemamedico/dashboard.jsp" class="navbar-brand"><b>C</b>entro<b> M</b>édico<b> E</b>speranza</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -194,10 +194,10 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="assets/startbootstrap/js/jquery.js"></script>
+    <script src="../assets/startbootstrap/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="assets/startbootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/startbootstrap/js/bootstrap.min.js"></script>
 
     <!-- Script para activar el carousel -->
     <script>

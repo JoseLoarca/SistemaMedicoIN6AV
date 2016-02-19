@@ -16,7 +16,7 @@
 		<property name="telefono" type="java.lang.Integer">
 		    <column name="telefono" />
 		</property>
-		<many-to-one name="idStock" class="org.sistemamedico.Stock" lazy="false">
+		<many-to-one name="idStock" class="org.sistemamedico.bean.Stock" lazy="false">
 			<column  name="idStock"/>
 		</many-to-one>
 	</class>
